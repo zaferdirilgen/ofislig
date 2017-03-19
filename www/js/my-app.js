@@ -11,6 +11,11 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+var mainView = myApp.addView('.view-menu', {
+    // Because we want to use dynamic navbar, we need to enable it for this view:
+    dynamicNavbar: true
+});
+
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
     console.log("Device is ready!");
@@ -40,4 +45,41 @@ $$(document).on('pageInit', function (e) {
 $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "about"
     myApp.alert('Here comes About page');
+})
+
+
+$$(document).on("click", ".menu_btn1", function(evt)
+{
+    console.log("menu_btn1 clicked");
+    myApp.alert('menu_btn1 clicked');	
+})
+
+$$(document).on("click", ".menu_btn2", function(evt)
+{
+    console.log("menu_btn2 clicked");
+    myApp.alert('menu_btn2 clicked');	
+})
+
+$$(document).on("click", ".menu_btn3", function(evt)
+{
+    console.log("menu_btn3 clicked");
+    myApp.alert('menu_btn3 clicked');	
+})
+
+$$(document).on("click", ".menu_btn4", function(evt)
+{
+    console.log("menu_btn4 clicked");
+    myApp.alert('menu_btn4 clicked');	
+})
+
+$$(document).on("click", ".menu_btn5", function(evt)
+{
+    console.log("menu_btn5 clicked");
+    myApp.alert('menu_btn5 clicked');	
+})
+
+$$(document).on("click", ".menu_btn6", function(evt)
+{
+    console.log("menu_btn6 clicked");
+    myApp.alert('menu_btn6 clicked');	
 })
