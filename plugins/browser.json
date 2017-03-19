@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.zmprojects.ofislig"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.zmprojects.ofislig"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.zmprojects.ofislig"
+        }
+    },
+    "dependent_plugins": {}
+}
